@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-color: #231330; */
+  background-color: wheat;
+  color: #fee;
+  font-family: 'Kenit', sans-serif;
+  font-weight: 300;
+}
+
+.wrapper {
+  width: 1080 px;
+  /* margin: 50px 100px auto; */
+}
+
+header {
+  margin: 25px 25px auto;
+  background-color: black;
+  padding-top: 25px;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 25px;
+  border-radius: 10px;
+}
+
+header .logo {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+header ul.nav {
+  float: right;
+  list-style: none;
+}
+
+header ul.nav li {
+  font-weight: 600;
+  display:inline-flex;
+  margin-top: 10px;
+  margin-left: 75px;
+  cursor: pointer;
+}
+
+/* header .presentation {
+  margin: 50px 0px auto;
+  background: black;
+  color: white;
+} */
+
+footer {
+  border-radius: 10px;
+  background-color: black;
+  margin: 25px 25px auto;
+  text-align: center;
+  padding-top: 25px;
+}
