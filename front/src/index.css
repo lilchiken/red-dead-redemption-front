@@ -8,9 +8,9 @@
 
 body {
   /* background-color: #231330; */
-  border: 1px solid;
-  background-color: wheat;
-  color: black;
+  /* border: 1px solid; */
+  background-color: black;
+  color: white;
   font-family: 'Kanit', sans-serif;
   font-weight: 300;
 }
@@ -25,12 +25,12 @@ body {
 
 header {
   margin: 25px 25px auto;
-  background-color: gray;
+  background-color: black;
   padding-top: 25px;
   padding-right: 80px;
   padding-left: 80px;
   padding-bottom: 25px;
-  border: solid black;
+  border: solid white;
   border-radius: 10px;
   border-width: 4px;
 }
@@ -39,8 +39,8 @@ header .logo {
   padding: 4px 4px 4px 4px;
   font-weight: 700;
   font-size: 30px;
-  background-color: #aaa;
-  border: solid black;
+  background-color: black;
+  border: solid white;
   border-radius: 10px;
   border-width: 3px;
   cursor: pointer;
@@ -65,32 +65,87 @@ header ul.nav li {
   padding: 8px 8px 8px 8px;
   font-weight: 600;
   display:inline-flex;
-  margin-top: px;
+  margin-right: 40px;
   margin-left: 50px;
   cursor: pointer;
-  background-color: #aaa;
-  border: solid black;
+  background-color: black;
+  border: solid white;
   border-radius: 5px;
   border-width: 2px;
 }
 
-main {
-  margin: 25px 25px auto;
-  background-color: gray;
+main .FAQ {
+  margin: 25px 25px;
+  background-color: black;
   padding-top: 25px;
   padding-right: 80px;
   padding-left: 80px;
   padding-bottom: 25px;
-  border: solid black;
+  border: solid white;
+  border-radius: 10px;
+  border-width: 4px;
+}
+
+main .Ask {
+  width: auto;
+  background-color: black;
+  padding: 15px 15px;
+  border: solid white;
+  border-radius: 10px;
+  border-width: 3px;
+  color: white;
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  font-size: 24px;
+  font-style: italic;
+  font-variant:initial;
+  font-weight: 600;
+  line-height: 22.4px;
+  text-align: center;
+}
+
+main .Answer {
+  margin: 30px 50px;
+  color: white;
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 22.4px;
+  text-align: left;
+  text-indent: 30px;
+}
+
+main .List {
+  margin: 30px 50px;
+  color: white;
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 22.4px;
+  text-align: left;
+}
+
+main .Request {
+  margin: 25px 25px;
+  background-color: black;
+  padding-top: 25px;
+  padding-right: 80px;
+  padding-left: 80px;
+  padding-bottom: 25px;
+  border: solid white;
   border-radius: 10px;
   border-width: 4px;
 }
 
 main .form-control {
-  width: 1280px;
-  background-color: #aaa;
+  float: left;
+  width: auto;
+  background-color: black;
   padding: 5px 5px;
-  border: solid black;
+  border: solid white;
   border-radius: 10px;
   border-width: 3px;
   font-family: monaco, Consolas, "Lucida Console", monospace;
@@ -99,15 +154,18 @@ main .form-control {
   font-variant: normal;
   font-weight: 500;
   line-height: 22.4px;
+  color: white;
 }
 
 main .btn {
+  float:none;
+  display: inline;
   font-family: monaco, Consolas, "Lucida Console", monospace;
-  background-color: #aaa;
-  border: solid black;
+  background-color: black;
+  border: solid white;
   border-radius: 10px;
   border-width: 3px;
-  color: black;
+  color: white;
   padding: 7px 15px;
   text-align: center;
   text-decoration: none;
@@ -118,15 +176,15 @@ main .btn {
 }
 
 main .btn:hover {
-  background-color: aliceblue;
+  background-color: rgb(123, 123, 123);
 }
 
 main .JSONResponse {
   margin-top: 15px;
-  width: 1415px;
-  background-color: #aaa;
+  width: auto;
+  background-color: black;
   padding: 15px 15px;
-  border: solid black;
+  border: solid white;
   border-radius: 10px;
   border-width: 3px;
   font-family: monaco, Consolas, "Lucida Console", monospace;
@@ -143,7 +201,7 @@ footer {
   text-align: center;
   padding-top: 25px;
   padding-bottom: 5px;
-  background-color: gray;
-  border: solid black;
+  background-color: black;
+  border: solid white;
   border-width: 4px 4px 0 4px;
 }
