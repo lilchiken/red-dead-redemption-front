@@ -8,30 +8,52 @@
 
 body {
   /* background-color: #231330; */
+  border: 1px solid;
   background-color: wheat;
-  color: #fee;
-  font-family: 'Kenit', sans-serif;
+  color: black;
+  font-family: 'Kanit', sans-serif;
   font-weight: 300;
 }
 
 .wrapper {
   width: 1080 px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
   /* margin: 50px 100px auto; */
 }
 
 header {
   margin: 25px 25px auto;
-  background-color: black;
+  background-color: gray;
   padding-top: 25px;
-  padding-right: 50px;
-  padding-left: 50px;
+  padding-right: 80px;
+  padding-left: 80px;
   padding-bottom: 25px;
+  border: solid black;
   border-radius: 10px;
+  border-width: 4px;
 }
 
 header .logo {
+  padding: 4px 4px 4px 4px;
   font-weight: 700;
   font-size: 30px;
+  background-color: #aaa;
+  border: solid black;
+  border-radius: 10px;
+  border-width: 3px;
+  cursor: pointer;
+}
+
+header .center {
+  display: inline;
+  margin-left: 150px;
+  margin-bottom: 5px;
+  font-family: 'Kanit', sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 header ul.nav {
@@ -40,23 +62,88 @@ header ul.nav {
 }
 
 header ul.nav li {
+  padding: 8px 8px 8px 8px;
   font-weight: 600;
   display:inline-flex;
-  margin-top: 10px;
-  margin-left: 75px;
+  margin-top: px;
+  margin-left: 50px;
   cursor: pointer;
+  background-color: #aaa;
+  border: solid black;
+  border-radius: 5px;
+  border-width: 2px;
 }
 
-/* header .presentation {
-  margin: 50px 0px auto;
-  background: black;
-  color: white;
-} */
+main {
+  margin: 25px 25px auto;
+  background-color: gray;
+  padding-top: 25px;
+  padding-right: 80px;
+  padding-left: 80px;
+  padding-bottom: 25px;
+  border: solid black;
+  border-radius: 10px;
+  border-width: 4px;
+}
+
+main .form-control {
+  width: 1280px;
+  background-color: #aaa;
+  padding: 5px 5px;
+  border: solid black;
+  border-radius: 10px;
+  border-width: 3px;
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 22.4px;
+}
+
+main .btn {
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  background-color: #aaa;
+  border: solid black;
+  border-radius: 10px;
+  border-width: 3px;
+  color: black;
+  padding: 7px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 50px;
+}
+
+main .btn:hover {
+  background-color: aliceblue;
+}
+
+main .JSONResponse {
+  margin-top: 15px;
+  width: 1415px;
+  background-color: #aaa;
+  padding: 15px 15px;
+  border: solid black;
+  border-radius: 10px;
+  border-width: 3px;
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 22.4px;
+}
 
 footer {
-  border-radius: 10px;
-  background-color: black;
-  margin: 25px 25px auto;
+  border-radius: 10px 10px 0 0;
+  margin: 0px 25px;
   text-align: center;
   padding-top: 25px;
+  padding-bottom: 5px;
+  background-color: gray;
+  border: solid black;
+  border-width: 4px 4px 0 4px;
 }
