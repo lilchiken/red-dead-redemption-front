@@ -4,10 +4,12 @@ export default function Header() {
   return (
     <header>
         <div>
-            <span className='logo'>Red Dead Redemption API</span>
+            <span className='logo' href="http://localhost:3000/">Red Dead Redemption API</span>
             <span className='center'>If you're going through hell, keep going.   -   W. Churchill &copy;</span>
             <ul className='nav'>
-                <li>Feedback</li>
+                <li href="mailto:andryuhin2@yandex.ru">
+                    Feedback
+                </li>
                 <li>Chat</li>
             </ul>
         </div>

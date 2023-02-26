@@ -6,9 +6,8 @@ export default function Body() {
   const [searchInputValue, setSearchInputValue] = useState("");
   const [error, setError] = useState("");
 
-  const sendRequest = async () => {
+  const sendRequest = () => {
     axios(`http://localhost:8000/${searchInputValue}`)
-    //axios(`https://swapi.dev/api/${searchInputValue}`)
       .then((r) => {
         setError("");
         setResultJson(r.data);
@@ -18,9 +17,20 @@ export default function Body() {
         setResultJson();
         setError('Bad request');
       });
+    }
+  const [resultEmail, setResultEmail] = useState();
+  const [message, setMessage] = useState("");
+  const sendEmail = () => {
+    axios.post('http://localhost:8000/subEmail', {email: resultEmail})
+      .then((r) => {
+        setMessage(r.data.detail);
+      })
+      .catch((e) => {
+        setMessage('Bad email');
+      });
   };
   return (
-    <main>
+    <main className="main">
       <div className="FAQ">
         <div className="Ask">
           Why is this needed?
@@ -61,6 +71,21 @@ export default function Body() {
           At first, I tested this framework for a long time with Flask, (I like the syntax of such frameworks, they are easy to compose API) and synchronous frameworks are very good for such projects, but the choice was for FastAPI due to the development of the project. Initially, I thought that the project would only contain one database and that's it, but now it has a lot of microservices (two backends, one frontend, a non-relational database and a relational one) and that may not be all!
         </div>
       </div>
+      <div className="Mail">
+        <div className="sub">
+          <input
+            value={resultEmail}
+            onChange={(e) => {
+              setResultEmail(e.target.value);
+            }}
+            className="form-control-sub"
+            placeholder="example@gmail.com"
+          ></input>
+          <button onClick={sendEmail} className='btn-sub'>
+            {(message) || "Subscribe for new updates"}
+          </button>
+        </div>
+      </div>
       <div className="Request">
         <div className="API">
           <input
@@ -68,7 +93,7 @@ export default function Body() {
             onChange={(e) => {
               setSearchInputValue(e.target.value);
             }}
-            class="form-control"
+            className="form-control"
             placeholder="people/1/"
           ></input>
           <button onClick={sendRequest} className='btn'>request</button>
